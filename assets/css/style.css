@@ -1,0 +1,14 @@
+*{
+    background-color:bisque;
+    display: grid;
+}
+.formulari{
+    background-color:aqua;
+    color: black;
+    margin: 20%;
+    border-style: double;
+    border-color: black;
+}
+#b_contraste, #b_fuente{
+    cursor: pointer;
+}
