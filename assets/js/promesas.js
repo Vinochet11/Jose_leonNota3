@@ -1,6 +1,9 @@
-import {addDoc,doc,collection} from "firebase/firestore";
-const db = getFirestore(app);
-const ref = await addDoc(collection(Busuario, ),persona);
+import {addDoc,collection,doc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+import { db } from "./firebase.js";
 
-
-//await doc(db(Busuario)persona)
+//funcion para registrar usuario
+export const registrarUsuario= async(usuario)=>{
+    console.log("Promesas: parte 1")
+    const docRef = await addDoc(collection(db,"DatosUsuarios"),usuario);
+    console.log("sa")
+} 

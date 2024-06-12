@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/Jose_leonNota3/assets/js/script.js"></script>
-    <link rel="stylesheet" href="/Jose_leonNota3/assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script  type="module" src="./assets/js/script.js"></script>
+    <script  type="module" src="./assets/js/firebase.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -25,49 +26,48 @@
             <h1>Valor Del dolar</h1>
         </div>
     </div>
-    <div class="quien">
+    <section>
         <br>
         <a>Somos la Bolsa de santiago. fundada el 27 de noviembre de 1893 es el principal centro de operaciones bursátiles de Chile</a><br>
         <a>y el tercero más grande de Latinoamérica tras el BOVESPA de São Paulo y la Bolsa Mexicana de Valores.</a>
-        <br><img src="/Jose_leonNota3/assets/fot_jpg/bolsadesantiagp.jpg">
-     </div>
-    <div id="r_buscamos">
+        <br>
+        <br>
+        <img src="/assets/fot_jpg/bolsadesantiagp.jpg">
         <h2>¿Que Buscamos?</h2>
-        <textarea cols="30" rows="10">Contribuyen al desarrollo del mercado de capitales, permitiendo que intermediarios y clientes transen valores e instrumentos financieros.</a><br>
-        <a>Facilitan el flujo de ahorro e inversión en el mercado de valores. Realizan la colocación primaria de instrumentos del mercado accionario y de bonos.</textarea>
-    </div>
-     <div class="formulari">
-    
-            <h1>Registrate gratis en nustra Pagina</h1>
-            <input type="text" class="Nombre">Ingrese su nombre: </input>
-            <br>
-            <input type="text" class="Apellido">Ingrese su Apellido: </input>
-            <input type="text" class="rut">Ingrese su rut: </input>
-            <input type="text" class="n_telefonico">Ingrese su Numero telefonico: </input>
-            <br>
-            <input type="text" class="edad">Ingrese su edad: </input>
-            <br>
-            <input type="text" class="C_postal">ingrese su codigo postal: </input>
-            <input type="email" class="C_electronico">Ingrese su correo eletronico: </input>
-            
-            <button type="text" class="registrarse">Registrate</button>
-            <button id="b_contraste"> cambiar el contraste</button>
-            <button id="b_fuente">cambiar el tamaño de la fuente</button>
-             
-    </div>
-    <br>
-    <div class=" R_sociales">
+        <a>Contribuyen al desarrollo del mercado de capitales, permitiendo que intermediarios y clientes transen valores e instrumentos financieros.</a><br>
+        <a>Facilitan el flujo de ahorro e inversión en el mercado de valores. Realizan la colocación primaria de instrumentos del mercado accionario y de bonos.</a>
+    </section>
+    <form>
+        <h1>Registrate gratis en nustra Pagina</h1>
+        <input type="text" class="nombre" id="nombre" placeholder="Nombre">
+        <input type="text"id="apellido" placeholder="Apellido">
+        <br>
+        <input type="text"  id="rut" placeholder="Rut">
+        <input type="text"  id="n_telefonico" placeholder="Numero Telefonico">
+        <br>
+        <input type="text" id="edad" placeholder="Ingrese su edad">
+        <input type="email"  id="c_electronico" placeholder="Ingrese su correo C_electronico">
+        <br>
+        <input type="text"  id="c_postal" placeholder="ingrese su codigo postal">
+        <br>
+        <button  type="text"  id="btn_registrarse">Registrate</button>
+        <button  id="b_contraste"> cambiar el contraste</button>
+        <button id="b_fuente">tamaño de la fuente</button>
+        <br>
+        <textarea name="comentarios" cols="40" rows="4" >comentarios</textarea>
+    </form><!--  agregamos la eiqueta form -->
+    <footer>
         <h1>siguenos en nuestras paginas
         </h1>
         <a>Redes sociales</a>
         <br>
         <a href="https://www.instagram.com/labolsadesantiago/?hl=es">
-        <img src="/Jose_leonNota3/assets/fot_jpg/imagen_x.png" width="100px" height="100px"> 
+        <img src="/assets/fot_jpg/instagram.jfif" width="90px" height="90px"> 
         <a href="https://twitter.com/bolsadesantiago?lang=es">
-        <img src="/Jose_leonNota3/assets/fot_jpg/imagen_x.png" width="100px" height="100px">   
-        </div>
+        <img src="/assets/fot_jpg/imagen_x.png" width="90px" height="90px">   
+    </footer>
 </body>
 </html>
 
 
-//nombre coleccion: Busuario
+//nombre coleccion: Datos_usuarios

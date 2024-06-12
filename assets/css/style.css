@@ -1,14 +1,38 @@
-*{
+body{
+    min-height: 100%;
     background-color:bisque;
-    display: grid;
+    text-align: center;
 }
-.formulari{
-    background-color:aqua;
-    color: black;
-    margin: 20%;
+body .inicial{
+    height: 60px;
+    display:inline-flex;
     border-style: double;
     border-color: black;
+    border-radius: 4%;
+    border-width: 7px;
+    padding: 15px;
+    
+    
+}
+.sssss,.que_buscamos,.Nuestra_v,.F_contacto,.Valor_dolar{
+    padding: 0px 60px ;
+}
+section{
+    padding: 0 400px;
+    display: inline-block;
+}
+form{
+    display: inline-block;
+    border-style: double;
+}
+.comentario{
+    right: 150px;
 }
 #b_contraste, #b_fuente{
     cursor: pointer;
+
+}
+footer{
+    right: 100px;
+    text-align: center;
 }
