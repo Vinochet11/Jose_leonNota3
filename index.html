@@ -26,7 +26,7 @@
             <h1>Valor Del dolar</h1>
         </div>
     </div>
-    <section>
+    <section class="section1">
         <br>
         <a>Somos la Bolsa de santiago. fundada el 27 de noviembre de 1893 es el principal centro de operaciones bursátiles de Chile</a><br>
         <a>y el tercero más grande de Latinoamérica tras el BOVESPA de São Paulo y la Bolsa Mexicana de Valores.</a>
@@ -37,25 +37,59 @@
         <a>Contribuyen al desarrollo del mercado de capitales, permitiendo que intermediarios y clientes transen valores e instrumentos financieros.</a><br>
         <a>Facilitan el flujo de ahorro e inversión en el mercado de valores. Realizan la colocación primaria de instrumentos del mercado accionario y de bonos.</a>
     </section>
+    <br>
     <form>
         <h1>Registrate gratis en nustra Pagina</h1>
-        <input type="text" class="nombre" id="nombre" placeholder="Nombre">
-        <input type="text"id="apellido" placeholder="Apellido">
+        <input type="text"  id="nombre" placeholder="Nombre">
+        <p class="noDisplay" id="pnombre">Debes ingresar un nombre</p>
+        <input type="text"  id="apellido" placeholder="Apellido">
+        <p class="noDisplay" id="papellido">Debes ingresar un apellido</p>
         <br>
         <input type="text"  id="rut" placeholder="Rut">
-        <input type="text"  id="n_telefonico" placeholder="Numero Telefonico">
+        <p class="noDisplay" id="prut">Debes ingresar un Rut</p>
+        <input type="text" id="n_telefonico" placeholder="Numero Telefonico">
+        <p class="noDisplay" id="pn_telefonico">Debes ingresar un numero Telefonico</p>
         <br>
-        <input type="text" id="edad" placeholder="Ingrese su edad">
-        <input type="email"  id="c_electronico" placeholder="Ingrese su correo C_electronico">
+        <input type="text"id="edad" placeholder="Ingrese su edad">
+        <p class="noDisplay" id="pedad">Debes ingresar una edad</p>
+        <input type="text"  id="c_electronico" placeholder="Ingrese su correo ">
+        <p class="noDisplay" id="pcorreo">Debes ingresar un correo</p>
         <br>
-        <input type="text"  id="c_postal" placeholder="ingrese su codigo postal">
+        <select id="inf_finianciera">
+            <option value="--Seleccione sueldo aproximado--">--Seleccione sueldo aproximado--</option>
+            <option value="mas de 1.600.000">mas de 1.0000.000</option>
+            <option value="1.000.000">1.0000.000</option>
+            <option value="750.000">750.000</option>
+            <option value="500.000">500.000</option>
+            <option value="menos de 500.000">menos de 500.000</option>
+        </select>
         <br>
-        <button  type="text"  id="btn_registrarse">Registrate</button>
-        <button  id="b_contraste"> cambiar el contraste</button>
-        <button id="b_fuente">tamaño de la fuente</button>
+        <button  type="button"  id="btn_registrarse">Registrate</button>
+        <button  type="button" id="btn_contraste"> cambiar el contraste</button>
+        <button type="button" id="btn_fuente">tamaño de la fuente</button>
+        <button type="button" id="btn_actualizar">actualizar</button>
+
         <br>
-        <textarea name="comentarios" cols="40" rows="4" >comentarios</textarea>
+        <textarea id="comentarios" name="comentarios" cols="40" rows="4" >comentarios</textarea>
     </form><!--  agregamos la eiqueta form -->
+        <table>
+            <thead>
+            <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Rut</th>
+            <th>n_telefonico</th>
+            <th>edad</th>
+            <th>c_electronico</th>
+            <th>inf_finianciera</th>
+            <th>comentarios</th>
+            </tr>
+        </thead>
+        </table>
+        <tbody id="cuerpoTabla">
+
+        </tbody>
+
     <footer>
         <h1>siguenos en nuestras paginas
         </h1>
@@ -68,6 +102,3 @@
     </footer>
 </body>
 </html>
-
-
-//nombre coleccion: Datos_usuarios
